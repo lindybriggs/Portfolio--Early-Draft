@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+header {
+    display:flex;
+    position:fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(120, 165, 204);
+    color:aliceblue;
+}
+
+nav ul {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-width: 360px;
+}
+
+h1, nav {
+margin: 2% 4% 2% 3%;
+justify-content: space-between;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+a {
+    color:aliceblue;
+}
+
+.mainImage {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../Images/self-photo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    color: rgb(120, 165, 204);
+    background-color: aliceblue;
+    font-size: large;
+}
+
+#chunk {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.bio {
+    position: relative;
+    width:100%;
+}
+
+#aboutMe {
+    position: absolute;
+    left:30px;
+}
+
+.paragraph {
+    position: absolute;
+    justify-content: space-between;
+    left: 362px;
+    right: 30px;
+    color: rgba(27,39,51,255);
+    font-size: medium;
+    line-height: 175%;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+}
