@@ -7,7 +7,6 @@ body {
 
 header {
     display:flex;
-    position:fixed;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -31,8 +30,12 @@ h1 {
     font-size: x-large;
 }
 
-a {
+li a {
     color:aliceblue;
+}
+
+a {
+    color: rgba(27,39,51,255);
 }
 
 .mainImage {
@@ -54,19 +57,28 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    flex-flow: column;
+    flex-basis: 30rem;
 }
 
-.bio {
+.bio,
+.contact,
+.work {
     position: relative;
     width:100%;
+    flex-grow: 1;
 }
 
-#aboutMe {
+#aboutMe,
+#contactMe,
+#myWork {
     position: absolute;
     left:30px;
 }
 
-.paragraph {
+.paragraph,
+.details,
+.images {
     position: absolute;
     justify-content: space-between;
     left: 362px;
@@ -76,8 +88,13 @@ h2 {
     line-height: 175%;
 }
 
+img {
+    max-width: 20%;
+}
+
 @media screen and (max-width: 768px) {
-    header {
+    header,
+    .bio {
       flex-direction: column;
     }
 }
