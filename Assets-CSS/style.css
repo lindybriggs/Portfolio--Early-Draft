@@ -1,4 +1,4 @@
-body {
+#column {
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
@@ -78,7 +78,7 @@ h2 {
 
 .paragraph,
 .details,
-.images {
+.bigWork {
     position: absolute;
     justify-content: space-between;
     left: 362px;
@@ -88,13 +88,46 @@ h2 {
     line-height: 175%;
 }
 
-img {
-    max-width: 20%;
+.bio,
+.contact {
+    height:300px
 }
 
-@media screen and (max-width: 768px) {
-    header,
-    .bio {
-      flex-direction: column;
-    }
+.work {
+    height:700px
 }
+
+.bigWork {
+    position: relative;
+    max-width: 60%;
+    right: 30px;
+}
+
+.otherWork1 {
+    position: absolute;
+    max-width: 30%;
+    bottom:5px;
+    left:362px;
+}
+.otherWork2 {
+    position: absolute;
+    max-width: 30%;
+    bottom:5px;
+    right:30px;
+}
+
+
+@media screen and (max-width: 992px) {
+    section {
+        flex: 0 0 98%;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        section {
+        flex: 0 0 98%;
+        }
+        header {
+        flex-direction: column;
+        }
+    }
