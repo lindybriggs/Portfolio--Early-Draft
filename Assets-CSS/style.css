@@ -47,87 +47,77 @@ a {
     background-position: center;
 }
 
+#all {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card {
+    display:flex;
+    min-width: 98%;
+    min-height: 30rem;
+}
+
+.titles {
+
+    width: 28%;
+    height:85%;
+    left: 2%;
+}
+
+.content {
+
+    width: 68%;
+    min-height: 80%;
+    right: 5%;
+    left:30%;
+}
+
 h2 {
     color: rgb(120, 165, 204);
     background-color: aliceblue;
     font-size: large;
+    font-weight:bolder;
 }
 
-#chunk {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex-flow: column;
-    flex-basis: 30rem;
-}
-
-.bio,
-.contact,
-.work {
-    position: relative;
-    width:100%;
-    flex-grow: 1;
-}
-
-#aboutMe,
-#contactMe,
-#myWork {
-    position: absolute;
-    left:30px;
-}
-
-.paragraph,
-.details,
-.bigWork {
-    position: absolute;
-    justify-content: space-between;
-    left: 362px;
-    right: 30px;
-    color: rgba(27,39,51,255);
+p {
+    color: rgb(25, 72, 28);
     font-size: medium;
-    line-height: 175%;
 }
 
-.bio,
-.contact {
-    height:300px
-}
-
-.work {
-    height:700px
+.try {
+    position: relative;
 }
 
 .bigWork {
-    position: relative;
-    max-width: 60%;
-    right: 30px;
+
+    height: 70vh;
 }
 
-.otherWork1 {
-    position: absolute;
-    max-width: 30%;
-    bottom:5px;
-    left:362px;
+.others {
+    position:static;
 }
+
+.otherWork1,
 .otherWork2 {
-    position: absolute;
-    max-width: 30%;
+    justify-content: space-evenly;
+    max-width: 45%;
     bottom:5px;
-    right:30px;
 }
-
 
 @media screen and (max-width: 992px) {
     section {
-        flex: 0 0 98%;
+        flex: 2 1 98%;
         }
     }
     
-    @media screen and (max-width: 768px) {
-        section {
-        flex: 0 0 98%;
-        }
-        header {
-        flex-direction: column;
-        }
+@media screen and (max-width: 768px) {
+    section {
+        flex: 2 1 98%;
     }
+    
+    header {
+        flex-direction: column;
+    }
+}

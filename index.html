@@ -28,29 +28,35 @@
 
     <section class="mainImage"></section>
 
-    <main id="chunk">
+    <main id="all">
 
-        <section class="bio">
-            <h2 id="aboutMe">About Me</h2>
-            <p class="paragraph">
+        <section class="card">
+            <h2 id="aboutMe" class="titles">About Me</h2>
+            <p class="content">
                 Hello, nice to meet you. My name's Lindy Briggs and I am learning to code through a full-stack web development bootcamp. We've learned HTML and CSS thus far, and I am really enjoying both. Looking forward to expanding my knowledge and skills in this field. Thanks for stopping by, and please check out some of my work in the section below!
             </p>
         </section>
 
-        <section class="work">
-            <h2 id="myWork">My Work</h2>
-            <a href="./link files/BIGindex.html"><img class="bigWork" src="./Images/work1.jpg" alt="screenshot of most recent work"></a> 
-            <a href="./work2/index.html"><img class="otherWork1" src="./Images/work2.jpg" alt="another photo of my work"></a>
-            <a href="./work3/index.html"><img class="otherWork2" src="./Images/work3.jpg" alt="another photo of my work"></a>
+        <section class="card">
+            <h2 id="myWork" class="titles">My Work</h2>
+            <section class="content">
+                <div class="try">
+                    <a href="./link files/work1/index.html"><img class="bigWork" src="./Images/work1.jpg" alt="screenshot of most recent work"></a> 
+                </div>
+                <div class="others">
+                    <a href="./link files/work1/index.html"><img class="otherWork1" src="./Images/work2.jpg" alt="another photo of my work"></a>
+                    <a href="./link files/work3/index.html"><img class="otherWork2" src="./Images/work3.jpg" alt="another photo of my work"></a>
+                </div>
+            </section>
         </section>
 
-        <section class="contact">
-            <h2 id="contactMe">Contact Me</h2>
-            <p class="details">Github: <a href="https://github.com/lindybriggs">visit here</a> </p>
-            <br><br>
-            <p class="details">Email: briggs.lindy@yahoo.com</p>
+        <section class="card">
+            <h2 id="contactMe" class="titles">Contact Me</h2>
+            <section class="content">
+                <p>Github: <a href="https://github.com/lindybriggs">visit here</a> </p>
+                <p>Email: briggs.lindy@yahoo.com</p>
+            </section>
         </section>
-
     </main>
 
 </body>
