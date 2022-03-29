@@ -92,16 +92,31 @@ h2 {
     font-weight:bolder;
 }
 
-.try {
+.try,
+.other1,
+.other2 {
+    display: flex;
     position: relative;
+}
+
+h3 {
+    position: absolute;
+    background-color: var(--light);
+    color: var(--dark);
+    font-weight: lighter;
+    font-style: italic;
+    padding: 0.2rem;
+    min-width: 10%;
+    font-size: 1.1rem;
+    border: solid .05rem;
+    border-color: rgba(192, 203, 204, 50%);
+    border-radius: 5px;
+    top:-0.5rem;
+    left:-0.5rem
 }
 
 .bigWork {
     width:88%;
-}
-
-.others {
-    position:static;
 }
 
 .otherWork1,
@@ -113,7 +128,10 @@ h2 {
 
 .bigWork:hover,
 .otherWork1:hover,
-.otherWork2:hover {
+.otherWork2:hover,
+.bigWork:hover h3,
+.otherWork1:hover h3,
+.otherWork2:hover h3 {
     box-shadow: inset 0px 0px 8px var(--dark), 0 0 15px var(--dark);
     opacity: 1;
 }
@@ -152,7 +170,4 @@ img {
         flex-direction: column;
     }
 
-    /* .content p {
-        text-align: center;
-    } */
 }
