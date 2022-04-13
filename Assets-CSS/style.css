@@ -72,6 +72,10 @@ a {
     margin: 1.2rem;
 }
 
+#contactCard {
+    padding-bottom: 5rem;
+}
+
 .titles {
 
     width: 28%;
@@ -83,6 +87,10 @@ a {
     width: 68%;
     min-height: 80%;
     padding-right: 1rem;
+}
+
+.space {
+    padding-bottom: 0.5rem;
 }
 
 h2 {
@@ -160,11 +168,6 @@ img {
     }
     
 @media screen and (max-width: 768px) {
-
-
-    .content {
-        align-items:center;
-    }
 
     header {
         flex-direction: column;
